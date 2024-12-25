@@ -1,0 +1,98 @@
+body {
+    background-image: url('assets/images/background-mobile.png');
+    background-size: cover;
+    background-position: center;
+    font-family: "Inconsolata";
+    color: white;
+    position: relative;
+    
+
+}
+
+/*Curly Backgroun Patterns*/
+.pattern {
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.pattern-lower-left {
+    bottom: 0; 
+    left: 0; 
+    width: 280px; 
+}
+
+.pattern-upper-right {
+    top: 0;
+    right: 0;
+    width: 150px; 
+}
+
+/*Text Content for first*/
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Input boxes */
+.input-box {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    outline: none;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.input-box::placeholder {
+    color: white;
+}
+
+/* Button */
+.generate-button {
+    width: 90%;
+    margin: 20px auto;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #FF6F61;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.generate-button:hover {
+    background: #E85A50;
+}
+
+/* Avatar Upload */
+.upload-avatar {
+    margin: 20px auto;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.upload-label {
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.upload-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
